@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fora Bot - Home</title>
+    <link rel="icon" href="../static/img/logo.png">
+    <link rel="stylesheet" href="/static/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+  </head>
+
+    <!-- Home Section -->
+    <div class="home" id="home">
+        <div class="home__container">
+          {% if not authorized %}
+          <img class="profile-photo" src="../static/img/not_auth.webp" alt="pfp" />
+          <h1 class="home__heading">Hello, Stranger. Try logging in.</h1>
+          <a href="/login" rel="nofollow noopener" class="home__btn" aria-label="login">login</a>
+          {% else %}
+          <img class="profile-photo" src="{{user_avatar}}" alt="pfp" />
+          <h1 class="home__heading">Hello, {{username}}. Try logging out.</h1>
+          <a href="/logout" rel="nofollow noopener" class="home__btn" aria-label="logout">logout</a>
+          {%endif %}
+        </div>
+    </div>
+</html>

@@ -1,0 +1,77 @@
+* { 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  /* Home Section 1/3 */
+  .home {
+    background-attachment:scroll;
+    background-size: cover;
+    padding: 200px 0;
+    padding-bottom: 100px;
+    background-size: cover;
+    background-color: #000000;
+    background-attachment: fixed;
+    background-size: 200% 200%;
+  }
+
+  .home__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 90%;
+    text-align: center;
+    padding: 25px;
+  }
+
+  .profile-photo {
+    border-radius: 100%;
+    width: 120px;
+  }
+
+  .home__heading {
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 25px;
+    font: italic;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .home__btn {
+    font-size: 1.5rem;
+    padding: 20px 60px;
+    margin: 30px auto;
+    cursor: pointer;
+    position: relative;
+    border: 2px solid #ffffff;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+
+  .home__btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+    transition: 0.3s ease-in;
+    border: 2px solid #949494;
+  }
+
+  @media screen and (max-width: 750px) {
+    .home__heading {
+      font-size: 70px;
+    }
+    
+    .home__description {
+      font-size: 25px;
+    }
+
+    .home__btn {
+      font-size: 1rem;
+    }
+  }
