@@ -27,9 +27,9 @@
   </p>
   
   <p align="center">
-    <a href="https://github.com/dolsity/meet-fora/issues/new/choose">Report Bug</a>
+    <a href="https://github.com/dolsity/nextcord-quart/issues/new/choose">Report Bug</a>
     ·
-    <a href="https://github.com/dolsity/mmet-fora/issues/new/choose">Request Feature</a>
+    <a href="https://github.com/dolsity/nextcord-quart/issues/new/choose">Request Feature</a>
   </p>
   
   <h2 align="center">
