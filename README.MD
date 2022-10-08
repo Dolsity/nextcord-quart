@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="100px" src="../static/img/not_auth.webp"/>
+  <img width="100px" src="https://nextcord.dev/icon.svg"/>
 </p>
 
 <h1 align="center">
