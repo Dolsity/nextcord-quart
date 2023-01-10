@@ -29,6 +29,9 @@
  <a href="https://docs.nextcord.dev/en/stable/">
     <img src="https://img.shields.io/badge/Library%20-Nextcord%20%E2%86%92-gray.svg?colorA=eed142&colorB=fed142&style=for-the-badge"/>
 </a>
+<a href="https://www.mongodb.com">
+    <img src="https://img.shields.io/badge/Database%20-MongoDB%20%E2%86%92-gray.svg?colorA=10821b&colorB=065e0f&style=for-the-badge"/>
+</a>
 
 <p align="center">
     <a href="https://github.com/dolsity/nextcord-quart/issues/new/choose">Report Bug</a>
