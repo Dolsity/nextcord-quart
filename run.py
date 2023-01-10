@@ -6,22 +6,17 @@ from dotenv import load_dotenv
 from pymongo import MongoClient
 
 load_dotenv()
-password = os.getenv('DATABASE_PASSWORD')
-secret_key = os.getenv('SECRET_KEY')
-discord_client_id = os.getenv('CLIENT_ID')
-discord_client_secret = os.getenv('DISCORD_CLIENT_SECRET')
-
-mongo_url = "mongodb+srv://<username>:<password>@cluster0.psdrj.mongodb.net/?retryWrites=true&w=majority"
-cluster = MongoClient(mongo_url)
+mongo_uri = os.getenv('MONGO_URI')
+cluster = MongoClient(mongo_uri)
 db = cluster["name"]
 database = db["database"]
 
 app = Quart(__name__)
 ipc_client = ipc.Client()
 
-app.secret_key = secret_key
-app.config["DISCORD_CLIENT_ID"] = discord_client_id
-app.config["DISCORD_CLIENT_SECRET"] = discord_client_secret
+app.secret_key = os.getenv('SECRET_KEY')
+app.config["DISCORD_CLIENT_ID"] = os.getenv('DISCORD_CLIENT_ID')
+app.config["DISCORD_CLIENT_SECRET"] = os.getenv('DISCORD_CLIENT_SECRET')
 app.config["DISCORD_REDIRECT_URI"] = "http://127.0.0.1:5000/callback"
 
 discord = DiscordOAuth2Session(app)
