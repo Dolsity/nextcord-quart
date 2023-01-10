@@ -1,3 +1,8 @@
-# macOS
+# MacOS
 .DS_Store
+
+# Environments
+.env
+
+# Python
 __pycache__/
